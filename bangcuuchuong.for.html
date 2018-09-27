@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var i,j;
+    var multiplicationTable = "<table  border='3' width='600' cellspacing='2' cellpadding='6'>";
+
+    for (i = 1; i <= 10 ; i++) {
+        multiplicationTable = multiplicationTable + "<tr>";
+        for (j = 1; j <= 10; j++){
+            multiplicationTable = multiplicationTable + "<th>" + j + '×' + i + '=' + i * j;
+        }
+    }
+    document.write(multiplicationTable);
+</script>
+</body>
+</html>
